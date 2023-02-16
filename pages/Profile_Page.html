@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,700&family=Poppins:wght@200;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/public/stylesheets/profile.css" />
+  </head>
+  <script type="text/javascript">
+    function zoom() {
+      document.body.style.zoom = "95%";
+    }
+  </script>
+  <body onload="zoom()">
+    <div class="overlay"></div>
+    <div class="wrapper">
+      <header>
+        <svg
+          width="196"
+          height="35"
+          viewBox="0 0 196 35"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1.49414 3.94141C1.12793 2.97461 1.47217 2.49121 2.52686 2.49121H6.02051C7.00195 2.49121 7.67578 2.99658 8.04199 4.00732L14.7656 22.3545C15.1025 23.292 15.3003 23.9219 15.3589 24.2441C15.4175 24.5518 15.4834 25.0718 15.5566 25.8042H15.6445C15.7178 25.0718 15.7837 24.5518 15.8423 24.2441C15.9009 23.9219 16.0986 23.292 16.4355 22.3545L23.1592 4.00732C23.5254 2.99658 24.1992 2.49121 25.1807 2.49121H28.6743C29.729 2.49121 30.0732 2.97461 29.707 3.94141L19.2041 32.2202C18.7646 33.4067 18.0762 34 17.1387 34H14.0625C13.125 34 12.4365 33.4067 11.9971 32.2202L1.49414 3.94141ZM35.1562 34C34.1309 34 33.6182 33.4507 33.6182 32.3521V4.13916C33.6182 3.04053 34.1309 2.49121 35.1562 2.49121H38.4961C39.5215 2.49121 40.0342 3.04053 40.0342 4.13916V32.3521C40.0342 33.4507 39.5215 34 38.4961 34H35.1562ZM45.9448 8.11621C44.8462 8.11621 44.2969 7.64014 44.2969 6.68799V3.91943C44.2969 2.96729 44.8462 2.49121 45.9448 2.49121H68.5327C69.6313 2.49121 70.1807 2.96729 70.1807 3.91943V6.68799C70.1807 7.64014 69.6313 8.11621 68.5327 8.11621H60.4468V32.7915C60.4468 33.5972 60.0806 34 59.3481 34H55.1294C54.397 34 54.0308 33.5972 54.0308 32.7915V8.11621H45.9448Z"
+            fill="black"
+          />
+          <path
+            d="M78.5777 34C77.3177 34 76.3577 33.655 75.6977 32.965C75.0677 32.245 74.7527 31.345 74.7527 30.265V0.7H78.3527V30.85H81.7727V34H78.5777ZM103.888 34C102.538 34 101.563 33.64 100.963 32.92C100.393 32.2 100.033 31.3 99.8835 30.22H99.6585C99.1485 31.66 98.3085 32.74 97.1385 33.46C95.9685 34.18 94.5735 34.54 92.9535 34.54C90.4935 34.54 88.5735 33.91 87.1935 32.65C85.8435 31.39 85.1685 29.68 85.1685 27.52C85.1685 25.33 85.9635 23.65 87.5535 22.48C89.1735 21.31 91.6785 20.725 95.0685 20.725H99.6585V18.43C99.6585 16.78 99.2085 15.52 98.3085 14.65C97.4085 13.78 96.0285 13.345 94.1685 13.345C92.7585 13.345 91.5735 13.66 90.6135 14.29C89.6835 14.92 88.9035 15.76 88.2735 16.81L86.1135 14.785C86.7435 13.525 87.7485 12.46 89.1285 11.59C90.5085 10.69 92.2485 10.24 94.3485 10.24C97.1685 10.24 99.3585 10.93 100.918 12.31C102.478 13.69 103.258 15.61 103.258 18.07V30.85H105.913V34H103.888ZM93.5385 31.48C94.4385 31.48 95.2635 31.375 96.0135 31.165C96.7635 30.955 97.4085 30.655 97.9485 30.265C98.4885 29.875 98.9085 29.425 99.2085 28.915C99.5085 28.405 99.6585 27.85 99.6585 27.25V23.425H94.8885C92.8185 23.425 91.3035 23.725 90.3435 24.325C89.4135 24.925 88.9485 25.795 88.9485 26.935V27.88C88.9485 29.02 89.3535 29.905 90.1635 30.535C91.0035 31.165 92.1285 31.48 93.5385 31.48ZM111.052 34V10.78H114.652V14.56H114.832C115.402 13.24 116.197 12.19 117.217 11.41C118.267 10.63 119.662 10.24 121.402 10.24C123.802 10.24 125.692 11.02 127.072 12.58C128.482 14.11 129.187 16.285 129.187 19.105V34H125.587V19.735C125.587 15.565 123.832 13.48 120.322 13.48C119.602 13.48 118.897 13.57 118.207 13.75C117.547 13.93 116.947 14.2 116.407 14.56C115.867 14.92 115.432 15.385 115.102 15.955C114.802 16.495 114.652 17.14 114.652 17.89V34H111.052ZM145.268 34.54C143.648 34.54 142.193 34.255 140.903 33.685C139.613 33.115 138.518 32.305 137.618 31.255C136.748 30.205 136.073 28.93 135.593 27.43C135.143 25.93 134.918 24.25 134.918 22.39C134.918 20.53 135.143 18.85 135.593 17.35C136.073 15.85 136.748 14.575 137.618 13.525C138.518 12.475 139.613 11.665 140.903 11.095C142.193 10.525 143.648 10.24 145.268 10.24C147.578 10.24 149.423 10.75 150.803 11.77C152.213 12.76 153.263 14.065 153.953 15.685L150.938 17.215C150.518 16.015 149.828 15.085 148.868 14.425C147.908 13.765 146.708 13.435 145.268 13.435C144.188 13.435 143.243 13.615 142.433 13.975C141.623 14.305 140.948 14.785 140.408 15.415C139.868 16.015 139.463 16.75 139.193 17.62C138.923 18.46 138.788 19.39 138.788 20.41V24.37C138.788 26.41 139.328 28.09 140.408 29.41C141.518 30.7 143.138 31.345 145.268 31.345C148.178 31.345 150.278 29.995 151.568 27.295L154.178 29.05C153.428 30.73 152.303 32.065 150.803 33.055C149.333 34.045 147.488 34.54 145.268 34.54ZM167.726 34.54C166.136 34.54 164.696 34.255 163.406 33.685C162.146 33.115 161.051 32.305 160.121 31.255C159.221 30.175 158.516 28.9 158.006 27.43C157.526 25.93 157.286 24.25 157.286 22.39C157.286 20.56 157.526 18.895 158.006 17.395C158.516 15.895 159.221 14.62 160.121 13.57C161.051 12.49 162.146 11.665 163.406 11.095C164.696 10.525 166.136 10.24 167.726 10.24C169.286 10.24 170.681 10.525 171.911 11.095C173.141 11.665 174.191 12.46 175.061 13.48C175.931 14.47 176.591 15.655 177.041 17.035C177.521 18.415 177.761 19.93 177.761 21.58V23.29H161.066V24.37C161.066 25.36 161.216 26.29 161.516 27.16C161.846 28 162.296 28.735 162.866 29.365C163.466 29.995 164.186 30.49 165.026 30.85C165.896 31.21 166.871 31.39 167.951 31.39C169.421 31.39 170.696 31.045 171.776 30.355C172.886 29.665 173.741 28.675 174.341 27.385L176.906 29.23C176.156 30.82 174.986 32.11 173.396 33.1C171.806 34.06 169.916 34.54 167.726 34.54ZM167.726 13.255C166.736 13.255 165.836 13.435 165.026 13.795C164.216 14.125 163.511 14.605 162.911 15.235C162.341 15.865 161.891 16.615 161.561 17.485C161.231 18.325 161.066 19.255 161.066 20.275V20.59H173.891V20.095C173.891 18.025 173.321 16.375 172.181 15.145C171.071 13.885 169.586 13.255 167.726 13.255ZM183.693 34V10.78H187.293V15.055H187.518C187.938 13.945 188.688 12.955 189.768 12.085C190.848 11.215 192.333 10.78 194.223 10.78H195.618V14.38H193.503C191.553 14.38 190.023 14.755 188.913 15.505C187.833 16.225 187.293 17.14 187.293 18.25V34H183.693Z"
+            fill="#407BFF"
+          />
+        </svg>
+
+        <nav>
+          <ul>
+            <li><a href="/api/auth/Home" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <div class="left-col">
+          <div class="profile-card">
+            <div class="image">
+              <img
+                src="../public/images/service_card_image.webp"
+                alt=""
+                class="profile-img"
+              />
+            </div>
+            <div class="text-data">
+              <span class="name">Coder</span>
+              <span class="job">YouTuber & Blogger</span>
+            </div>
+
+            <div class="media-buttons">
+              <a href="#" style="background: #4267b2" class="link">
+                <i class="bx bxl-facebook"></i>
+              </a>
+              <a href="#" style="background: #1da1f2" class="link">
+                <i class="bx bxl-twitter"></i>
+              </a>
+              <a href="#" style="background: #e1306c" class="link">
+                <i class="bx bxl-instagram"></i>
+              </a>
+              <a href="#" style="background: #ff0000" class="link">
+                <i class="bx bxl-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-col">
+          <div class="container">
+            <div>
+              <h1>Details</h1>
+            </div>
+            <form action="/api/auth/profile" method="post" class="form">
+              <input type="text" id="id" name="id" value="<%= id %>" hidden />
+              <div class="column">
+                <div class="input-box">
+                  <label for="fullName">Full Name</label>
+                  <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    value=""
+                    placeholder="Enter full name"
+                    required
+                  />
+                </div>
+                <div class="input-box">
+                  <label for="email"><%= email %></label>
+                  <input
+                    type="email"
+                    placeholder="Enter email address"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="input-box">
+                  <label for="phoneNumber">Phone Number</label>
+                  <input
+                    type="number"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    placeholder="Enter phone number"
+                    0-9
+                    required
+                  />
+                </div>
+
+                <div class="input-box">
+                  <label for="birthDate">Birth Day</label>
+                  <input
+                    type="date"
+                    id="year"
+                    name="year"
+                    value=""
+                    placeholder="Enter birth date"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="column">
+                <div class="input-box">
+                  <label for="gender">Gender </label>
+                  <select name="gender" id="gender">
+                    <option disabled hidden selected>Gender</option>
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                    <option value="other">other</option>
+                  </select>
+                </div>
+                <div class="input-box">
+                  <label for="city">City</label>
+                  <input
+                    type="text"
+                    id="city"
+                    name="city"
+                    value=""
+                    placeholder="Enter your city"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="input-box-bio">
+                <label for="bio">Bio</label>
+                <input
+                  type="text"
+                  id="bio"
+                  name="bio"
+                  placeholder="Say something about you.."
+                  value=""
+                  required
+                />
+              </div>
+
+              <button type="submit" value="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </main>
+      <div class="work">
+        <h1>ADD WORK</h1>
+      </div>
+    </div>
+  </body>
+</html>

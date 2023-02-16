@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Montserrat', sans-serif;
+}
+form{
+    border: 2px dashed red;
+    width: 25%;
+    margin-left: 50%;
+    padding: 2.5rem;
+    content: 500px ;
+    justify-content: right;
+    
+}
+
+.btn1{
+    font-size: 12rem;
+}

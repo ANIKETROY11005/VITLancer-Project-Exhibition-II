@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background: whitesmoke;
+
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+.wrapper {
+    /* margin: 10% auto; */
+    max-width: 1200px;
+    max-height: 800px;
+    margin: 0 auto;
+}
+
+/* Navbar */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    margin: 4em;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 4.1em;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    position: relative;
+}
+
+nav ul li a.active::before {
+    position: absolute;
+    content: "";
+    width: 35%;
+    height: 1px;
+    border-bottom: 2px solid black;
+    bottom: -6px;
+    
+
+}
+
+nav ul li a:before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 1px;
+    border-bottom: 2px solid rgb(122, 122, 122);
+    bottom: -6px;
+    transition: width .3s;
+}
+
+/* Hero Section */
+
+main {
+    display: flex;
+    gap: 5em;
+    margin-top: 11em;
+    height: 60vh;
+}
+
+.left-col {
+    
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.container{
+    position: relative;
+    max-width: 60rem;
+    width: 100%;
+    background: #ffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    overflow: hidden;
+    
+}
+
+.container .forms{
+    
+    display: flex;
+    align-items: center;
+    height: 500px;
+    width: 200%;
+    transition: height 0.2s ease;
+    
+    transition: height 0.2s ease;
+}
+
+
+
+.container .form{
+    width: 50%;
+    padding: 3em;
+    background-color: #fff;
+    transition: margin-left 0.18s ease;
+    
+}
+
+.container.active .login{
+    margin-left: -50%;
+    opacity: 0;
+    transition: margin-left 0.18s ease,opacity 0.15s ease;
+    
+}
+
+.container.form  .signup {
+    opacity: 0;
+    transition: opacity 0.09s ease;
+    
+}
+.container.active .signup {
+    opacity: 1;
+    transition: opacity 0.2s ease;
+    
+}
+
+.container.active .forms{
+    height:760px
+}
+
+
+
+
+
+.container .form .title {
+    
+    position: relative;
+    font-size: 2.7em;
+    font-weight: 600;
+}
+
+.form .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0.3rem;
+    width: 3rem;
+    background-color: #4070f4;
+    border-radius: 2.5rem;
+
+}
+
+.form .input-field {
+    
+    position: relative;
+    height: 5rem;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.input-field input{
+    position: absolute;
+    height:100%;
+    width: 100%;
+    padding: 0 3.5rem;
+    border: none;
+    outline: none;
+    border-bottom: 0.2rem solid #ccc;
+    border-top: 0.2rem solid transparent;
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.input-field input:is(:focus, :valid){
+    border-bottom-color: #4070f4;
+}
+
+.input-field i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 2.3rem;
+    transition: all 0.3s ease;
+}
+
+.input-field input:is(:focus, :valid) ~ i{
+    color: #4070f4;
+}
+
+.input-field i.icon{
+    left: 0;
+}
+
+.input-field i.showHidePw{
+    right: 0;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.form .checkbox-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.checkbox-content input{
+    margin-right: 1rem;
+    accent-color: #4070f4;
+}
+
+.checkbox-text .checkbox-content {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-content input.size{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 0.8rem -.2rem .4rem;
+    accent-color: #4070f4;
+}
+
+.form a.text{
+    color: #4070f4;
+    text-decoration: none;
+
+}
+
+.form a:hover{
+    text-decoration: underline;
+
+}
+
+.form .text{
+    color: #333;
+    font-size: 1.4rem;
+}
+
+.form .button {
+    margin-top: 3.5rem;
+
+}
+
+.form .button input {
+    border: none;
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    border-radius: 0.6rem;
+    background-color: #4070f4;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+}
+
+.button input:hover{
+    background-color: #265df2;
+}
+
+.form .login-signup {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+
+
+
+.right-col {
+    flex-grow: 1;
+}
+
+
+
+.subhead {
+    font-size: 1.8rem;
+}
+
+.login-from {
+    display: flex;
+    gap:2em;
+}
+
+
+
+
+/* Right column svg */
+.right-col{
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.card {
+    
+    border-radius: .8em;
+    padding: 1.1em;
+    display: flex;
+    align-items: end;
+    background-image: url(../images/Mobile\ login-rafiki.png);
+    background-size: 115%;
+}
+
+.card-details {
+    background:white;
+    border-radius: .6em;
+    padding: 2em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    z-index: 0;
+    /* opacity: 0.7; */
+} 
+
+.card-details a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-family: 'Playfair display';
+    font-weight:700 ;
+    
+    font-style: italic;
+}
+
+/* Micro Interactions */
+
+nav ul li a:hover::before {
+    width: 35%;
+
+}
+
+.primary-cta:hover {
+    background: #96da85;
+    transition: .8s;
+    
+    
+}
+.secondary-cta:hover svg {
+    transform: translateX(10px);
+     
+}
+
+.secondary-cta:hover {
+    text-decoration: underline;
+}
+
+
+/* Intro Animation */
+.overlay {
+    position: absolute;
+    z-index: 999;
+    background: white;
+    width: 100%;
+    height: 100%;
+    animation: reveal 1s ease-in forwards;
+    transform-origin: bottom;
+}
+
+@keyframes reveal {
+    from {
+        transform: scaleY(1);
+    }
+    to {
+        transform: scaleY(0);
+    }
+}
+
+main {
+    animation: growIn 2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+    transform: scale(.4);
+}
+
+@keyframes growIn {
+    to {
+        transform: scale(1);
+    }
+}
